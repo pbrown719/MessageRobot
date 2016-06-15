@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C770BA61D1190F80022F17A /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C770BA51D1190F80022F17A /* IntentHandler.swift */; };
+		5C770BAF1D1190F80022F17A /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C770BAE1D1190F80022F17A /* IntentsUI.framework */; };
+		5C770BB21D1190F80022F17A /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C770BB11D1190F80022F17A /* IntentViewController.swift */; };
+		5C770BB51D1190F80022F17A /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C770BB31D1190F80022F17A /* MainInterface.storyboard */; };
+		5C770BB91D1190F80022F17A /* MessageRobot-SiriKitUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C770BAC1D1190F80022F17A /* MessageRobot-SiriKitUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5C770BBC1D1190F80022F17A /* MessageRobot-SiriKit.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5C770BA31D1190F80022F17A /* MessageRobot-SiriKit.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5CF76DA31D1100A4007D9A6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76DA21D1100A4007D9A6F /* AppDelegate.swift */; };
 		5CF76DA51D1100A4007D9A6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CF76DA41D1100A4007D9A6F /* ViewController.swift */; };
 		5CF76DA81D1100A4007D9A6F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CF76DA61D1100A4007D9A6F /* Main.storyboard */; };
@@ -16,6 +22,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		5C770BB71D1190F80022F17A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF76D971D1100A4007D9A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C770BAB1D1190F80022F17A;
+			remoteInfo = "MessageRobot-SiriKitUI";
+		};
+		5C770BBA1D1190F80022F17A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CF76D971D1100A4007D9A6F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C770BA21D1190F80022F17A;
+			remoteInfo = "MessageRobot-SiriKit";
+		};
 		5CF76DB41D1100A4007D9A6F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5CF76D971D1100A4007D9A6F /* Project object */;
@@ -25,7 +45,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5C770BC31D1190F80022F17A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5C770BB91D1190F80022F17A /* MessageRobot-SiriKitUI.appex in Embed App Extensions */,
+				5C770BBC1D1190F80022F17A /* MessageRobot-SiriKit.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5C770BA31D1190F80022F17A /* MessageRobot-SiriKit.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MessageRobot-SiriKit.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C770BA51D1190F80022F17A /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		5C770BA71D1190F80022F17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5C770BAC1D1190F80022F17A /* MessageRobot-SiriKitUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MessageRobot-SiriKitUI.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C770BAE1D1190F80022F17A /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		5C770BB11D1190F80022F17A /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		5C770BB41D1190F80022F17A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		5C770BB61D1190F80022F17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CF76D9F1D1100A4007D9A6F /* MessageRobot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageRobot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF76DA21D1100A4007D9A6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CF76DA41D1100A4007D9A6F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +82,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5C770BA01D1190F80022F17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C770BA91D1190F80022F17A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C770BAF1D1190F80022F17A /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CF76D9C1D1100A4007D9A6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -56,11 +114,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C770BA41D1190F80022F17A /* MessageRobot-SiriKit */ = {
+			isa = PBXGroup;
+			children = (
+				5C770BA51D1190F80022F17A /* IntentHandler.swift */,
+				5C770BA71D1190F80022F17A /* Info.plist */,
+			);
+			path = "MessageRobot-SiriKit";
+			sourceTree = "<group>";
+		};
+		5C770BAD1D1190F80022F17A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5C770BAE1D1190F80022F17A /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5C770BB01D1190F80022F17A /* MessageRobot-SiriKitUI */ = {
+			isa = PBXGroup;
+			children = (
+				5C770BB11D1190F80022F17A /* IntentViewController.swift */,
+				5C770BB31D1190F80022F17A /* MainInterface.storyboard */,
+				5C770BB61D1190F80022F17A /* Info.plist */,
+			);
+			path = "MessageRobot-SiriKitUI";
+			sourceTree = "<group>";
+		};
 		5CF76D961D1100A4007D9A6F = {
 			isa = PBXGroup;
 			children = (
 				5CF76DA11D1100A4007D9A6F /* MessageRobot */,
 				5CF76DB61D1100A4007D9A6F /* MessageRobotTests */,
+				5C770BA41D1190F80022F17A /* MessageRobot-SiriKit */,
+				5C770BB01D1190F80022F17A /* MessageRobot-SiriKitUI */,
+				5C770BAD1D1190F80022F17A /* Frameworks */,
 				5CF76DA01D1100A4007D9A6F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +158,8 @@
 			children = (
 				5CF76D9F1D1100A4007D9A6F /* MessageRobot.app */,
 				5CF76DB31D1100A4007D9A6F /* MessageRobotTests.xctest */,
+				5C770BA31D1190F80022F17A /* MessageRobot-SiriKit.appex */,
+				5C770BAC1D1190F80022F17A /* MessageRobot-SiriKitUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +189,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5C770BA21D1190F80022F17A /* MessageRobot-SiriKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C770BC21D1190F80022F17A /* Build configuration list for PBXNativeTarget "MessageRobot-SiriKit" */;
+			buildPhases = (
+				5C770B9F1D1190F80022F17A /* Sources */,
+				5C770BA01D1190F80022F17A /* Frameworks */,
+				5C770BA11D1190F80022F17A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MessageRobot-SiriKit";
+			productName = "MessageRobot-SiriKit";
+			productReference = 5C770BA31D1190F80022F17A /* MessageRobot-SiriKit.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		5C770BAB1D1190F80022F17A /* MessageRobot-SiriKitUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C770BC11D1190F80022F17A /* Build configuration list for PBXNativeTarget "MessageRobot-SiriKitUI" */;
+			buildPhases = (
+				5C770BA81D1190F80022F17A /* Sources */,
+				5C770BA91D1190F80022F17A /* Frameworks */,
+				5C770BAA1D1190F80022F17A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MessageRobot-SiriKitUI";
+			productName = "MessageRobot-SiriKitUI";
+			productReference = 5C770BAC1D1190F80022F17A /* MessageRobot-SiriKitUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		5CF76D9E1D1100A4007D9A6F /* MessageRobot */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5CF76DBC1D1100A4007D9A6F /* Build configuration list for PBXNativeTarget "MessageRobot" */;
@@ -106,10 +230,13 @@
 				5CF76D9B1D1100A4007D9A6F /* Sources */,
 				5CF76D9C1D1100A4007D9A6F /* Frameworks */,
 				5CF76D9D1D1100A4007D9A6F /* Resources */,
+				5C770BC31D1190F80022F17A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5C770BB81D1190F80022F17A /* PBXTargetDependency */,
+				5C770BBB1D1190F80022F17A /* PBXTargetDependency */,
 			);
 			name = MessageRobot;
 			productName = MessageRobot;
@@ -144,6 +271,18 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Preston Brown";
 				TargetAttributes = {
+					5C770BA21D1190F80022F17A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UW85H5T993;
+						DevelopmentTeamName = "Preston Brown (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
+					5C770BAB1D1190F80022F17A = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UW85H5T993;
+						DevelopmentTeamName = "Preston Brown (Personal Team)";
+						ProvisioningStyle = Automatic;
+					};
 					5CF76D9E1D1100A4007D9A6F = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = UW85H5T993;
@@ -174,11 +313,28 @@
 			targets = (
 				5CF76D9E1D1100A4007D9A6F /* MessageRobot */,
 				5CF76DB21D1100A4007D9A6F /* MessageRobotTests */,
+				5C770BA21D1190F80022F17A /* MessageRobot-SiriKit */,
+				5C770BAB1D1190F80022F17A /* MessageRobot-SiriKitUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5C770BA11D1190F80022F17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C770BAA1D1190F80022F17A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C770BB51D1190F80022F17A /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CF76D9D1D1100A4007D9A6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -199,6 +355,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5C770B9F1D1190F80022F17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C770BA61D1190F80022F17A /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C770BA81D1190F80022F17A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C770BB21D1190F80022F17A /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CF76D9B1D1100A4007D9A6F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +391,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		5C770BB81D1190F80022F17A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C770BAB1D1190F80022F17A /* MessageRobot-SiriKitUI */;
+			targetProxy = 5C770BB71D1190F80022F17A /* PBXContainerItemProxy */;
+		};
+		5C770BBB1D1190F80022F17A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C770BA21D1190F80022F17A /* MessageRobot-SiriKit */;
+			targetProxy = 5C770BBA1D1190F80022F17A /* PBXContainerItemProxy */;
+		};
 		5CF76DB51D1100A4007D9A6F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5CF76D9E1D1100A4007D9A6F /* MessageRobot */;
@@ -227,6 +409,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5C770BB31D1190F80022F17A /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5C770BB41D1190F80022F17A /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		5CF76DA61D1100A4007D9A6F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -246,6 +436,54 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5C770BBD1D1190F80022F17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MessageRobot-SiriKit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.MessageRobot.MessageRobot-SiriKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5C770BBE1D1190F80022F17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MessageRobot-SiriKit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.MessageRobot.MessageRobot-SiriKit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		5C770BBF1D1190F80022F17A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MessageRobot-SiriKitUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.MessageRobot.MessageRobot-SiriKitUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5C770BC01D1190F80022F17A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "MessageRobot-SiriKitUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.willowtreeapps.MessageRobot.MessageRobot-SiriKitUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		5CF76DBA1D1100A4007D9A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -338,6 +576,7 @@
 		5CF76DBD1D1100A4007D9A6F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageRobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -350,6 +589,7 @@
 		5CF76DBE1D1100A4007D9A6F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MessageRobot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -388,6 +628,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5C770BC11D1190F80022F17A /* Build configuration list for PBXNativeTarget "MessageRobot-SiriKitUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C770BBF1D1190F80022F17A /* Debug */,
+				5C770BC01D1190F80022F17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5C770BC21D1190F80022F17A /* Build configuration list for PBXNativeTarget "MessageRobot-SiriKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C770BBD1D1190F80022F17A /* Debug */,
+				5C770BBE1D1190F80022F17A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		5CF76D9A1D1100A4007D9A6F /* Build configuration list for PBXProject "MessageRobot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -404,6 +660,7 @@
 				5CF76DBE1D1100A4007D9A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CF76DBF1D1100A4007D9A6F /* Build configuration list for PBXNativeTarget "MessageRobotTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +669,7 @@
 				5CF76DC11D1100A4007D9A6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
